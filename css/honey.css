@@ -1,0 +1,91 @@
+/* ================================
+   BASIC PAGE STYLING
+================================ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* Centering and spacing */
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ================================
+   BOX STYLING
+================================ */
+.box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+/* Title inside the box */
+.box h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+/* Expanded state */
+.box.active {
+  height: auto;
+  padding-bottom: 20px;
+  border: 2px solid #007bff;
+}
+
+/* ================================
+   OPTIONS AREA (Hidden by default)
+================================ */
+.options {
+  margin-top: 15px;
+  display: none;
+}
+
+.box.active .options {
+  display: block;
+}
+
+/* ================================
+   COLOR BUTTONS
+================================ */
+.color-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Colors */
+.red { background: red; }
+.green { background: green; }
+.blue { background: blue; }
+
+/* ================================
+   BOX COLOR PREVIEW
+================================ */
+.color-preview {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background: #ddd;
+}
