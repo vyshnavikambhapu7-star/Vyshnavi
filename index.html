@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Boxes — Frontend Task</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="frame" id="page">
+    <h1 class="title">Interactive Boxes — Click to expand</h1>
+
+    <section class="boxes">
+      <article class="box" data-position="top" tabindex="0" aria-expanded="false" aria-controls="opts-top">
+        <header class="box-head">
+          <h2>Top Box</h2>
+          <span class="hint">Click to expand</span>
+        </header>
+
+        <div class="box-body">
+          <p class="desc">Choose a color:</p>
+          <div class="options" id="opts-top" role="region" aria-label="Top box color options">
+            <button class="color-btn" data-color="#ffffff" aria-label="White color" title="White">White</button>
+            <button class="color-btn" data-color="#f87171" aria-label="Red color" title="Red">Red</button>
+            <button class="color-btn" data-color="#60a5fa" aria-label="Blue color" title="Blue">Blue</button>
+            <button class="color-btn" data-color="#34d399" aria-label="Green color" title="Green">Green</button>
+            <button class="color-btn" data-color="#fbbf24" aria-label="Yellow color" title="Yellow">Yellow</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="box" data-position="middle" tabindex="0" aria-expanded="false" aria-controls="opts-middle">
+        <header class="box-head">
+          <h2>Middle Box</h2>
+          <span class="hint">Click to expand</span>
+        </header>
+
+        <div class="box-body">
+          <p class="desc">Choose a color:</p>
+          <div class="options" id="opts-middle" role="region" aria-label="Middle box color options">
+            <button class="color-btn" data-color="#ffffff" aria-label="White color" title="White">White</button>
+            <button class="color-btn" data-color="#f472b6" aria-label="Pink color" title="Pink">Pink</button>
+            <button class="color-btn" data-color="#7c3aed" aria-label="Purple color" title="Purple">Purple</button>
+            <button class="color-btn" data-color="#06b6d4" aria-label="Teal color" title="Teal">Teal</button>
+            <button class="color-btn" data-color="#f97316" aria-label="Orange color" title="Orange">Orange</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="box" data-position="bottom" tabindex="0" aria-expanded="false" aria-controls="opts-bottom">
+        <header class="box-head">
+          <h2>Bottom Box</h2>
+          <span class="hint">Click to expand</span>
+        </header>
+
+        <div class="box-body">
+          <p class="desc">Choose a color:</p>
+          <div class="options" id="opts-bottom" role="region" aria-label="Bottom box color options">
+            <button class="color-btn" data-color="#ffffff" aria-label="White color" title="White">White</button>
+            <button class="color-btn" data-color="#ef4444" aria-label="Crimson color" title="Crimson">Crimson</button>
+            <button class="color-btn" data-color="#2563eb" aria-label="Royal blue color" title="Blue">Blue</button>
+            <button class="color-btn" data-color="#10b981" aria-label="Emerald color" title="Emerald">Emerald</button>
+            <button class="color-btn" data-color="#8b5cf6" aria-label="Indigo color" title="Indigo">Indigo</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>Built with <strong>HTML</strong>, <strong>CSS</strong> and <strong>Vanilla JS</strong>.</p>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
